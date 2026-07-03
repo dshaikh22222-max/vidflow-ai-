@@ -1,0 +1,104 @@
+name: vidflow_ai
+description: AI Influencer Universe - Watch AI-generated characters, not humans.
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.2.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # UI & Design
+  cupertino_icons: ^1.0.6
+  google_fonts: ^6.1.0
+  flutter_animate: ^4.1.1
+  lottie: ^2.6.0
+  shimmer: ^3.0.0
+  confetti: ^0.7.0
+
+  # Video & Media
+  video_player: ^2.8.2
+  camera: ^0.10.5+5
+  image_picker: ^1.0.7
+  cached_network_image: ^3.3.0
+  photo_view: ^0.14.0
+  visibility_detector: any
+
+  # Video Processing
+  image: ^4.1.0
+
+  # Audio
+  audio_waveforms: ^1.0.5
+
+  # State Management & Data
+  flutter_riverpod: ^2.4.10
+  riverpod: ^2.4.10
+
+  # Networking
+  http: ^1.1.0
+  dio: ^5.3.1
+
+  # Database & Storage
+  shared_preferences: ^2.2.2
+
+  # Location & Permissions
+  geolocator: ^9.0.2
+  permission_handler: any
+
+  # UI Components
+  smooth_page_indicator: ^1.1.0
+  flutter_staggered_grid_view: ^0.7.0
+  dotted_decoration: ^2.0.0
+
+  # ML Kit
+  google_mlkit_face_detection: any
+  google_mlkit_commons: any
+
+  # Haptics
+  vibration: ^3.2.0
+
+  # Utility
+  intl: ^0.19.0
+
+  # WebRTC for voice calls
+  flutter_webrtc: ^1.5.2
+
+  # Local storage
+  sqflite: ^2.3.0
+  path: ^1.8.3
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+  build_runner: ^2.4.6
+  flutter_launcher_icons: ^0.13.1
+  flutter_native_splash: ^2.3.6
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/icons/
+    - assets/images/
+    - assets/animations/
+    - assets/characters/
+
+  fonts:
+    - family: SFPro
+      fonts:
+        - asset: assets/fonts/SFProDisplay-Regular.otf
+        - asset: assets/fonts/SFProDisplay-Bold.otf
+          weight: 700
+        - asset: assets/fonts/SFProDisplay-Semibold.otf
+          weight: 600
+    - family: Inter
+      fonts:
+        - asset: assets/fonts/Inter-Regular.ttf
+        - asset: assets/fonts/Inter-Bold.ttf
+          weight: 700
+        - asset: assets/fonts/Inter-Semibold.ttf
+          weight: 600
